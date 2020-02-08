@@ -1,5 +1,28 @@
 h1 {
     text-align: center;
-    background-color: lightblue;
     
+    
+}
+
+.col-sm-4 {
+    background-color: cornflowerblue;
+
+
+}
+
+
+#forecastOne {
+    background-color: green;
+
+
+}
+#forecastFive{
+    background-color: yellow;
+    height: 200px;
+}
+
+.row {
+    height: 200px;
+
+
 }
