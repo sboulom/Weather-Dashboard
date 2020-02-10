@@ -9,13 +9,17 @@ h1 {
 
 
 }
+.card {
+    background-color: green;
 
+    
+}
 
-#forecastOne {
+/* #forecastOne {
     background-color: green;
 
 
-}
+} */
 #forecastFive{
     background-color: yellow;
     height: 200px;
