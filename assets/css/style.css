@@ -1,32 +1,23 @@
 h1 {
-    text-align: center;
-    
-    
+  text-align: center;
 }
 
-.col-sm-4 {
-    background-color: cornflowerblue;
-
-
+/* .col-sm-4 {
+  background-color: cornflowerblue;
 }
 .card {
-    background-color: green;
-
-    
+  background-color: green;
 }
 
-/* #forecastOne {
-    background-color: green;
+#forecastOne {
+  background-color: green; */
+/* } */
+#forecastFive {
+  /* background-color: yellow; */
+  height: 200px;
+  font-size: 18px;
+}
 
-
+/* .row {
+  height: 200px;
 } */
-#forecastFive{
-    background-color: yellow;
-    height: 200px;
-}
-
-.row {
-    height: 200px;
-
-
-}

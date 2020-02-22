@@ -35,8 +35,11 @@ function callAPI(queryURL) {
     var iconurl =
       "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png";
     $("#iconImage").attr("src", iconurl);
+    var humidity = response.main.humidity;
+    var temp = Math.floor((response.main.temp - 273.15) * 1.8 + 32);
+    // Math.round(temp);
+    console.log(response);
 
-    var temp = (response.main.temp - 273.15) * 1.8 + 32;
     $(".temperature").append(temp);
     $(".humidity").append(response.main.humidity);
     $(".windSpeed").append(response.wind.speed);
@@ -66,7 +69,17 @@ function callAPI(queryURL) {
               ".png";
             var img = $("<img>");
             img.attr("src", iconurl);
-            col.append(date, img);
+            col.append(
+              date,
+              $("<br>"),
+              $("<br>"),
+              img,
+              $("<br>"),
+              temp,
+              $("<br>"),
+              humidity
+            );
+            console.log(humidity);
             row.append(col);
           }
         }
