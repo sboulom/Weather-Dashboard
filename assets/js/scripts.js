@@ -16,7 +16,7 @@ $("#find-city").on("click", function(e) {
   console.log(cityName);
 
   var queryURL =
-    "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + apiKey;
+    "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + apiKey;
   console.log(queryURL);
 
   callAPI(queryURL);
