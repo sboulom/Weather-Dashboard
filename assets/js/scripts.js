@@ -33,7 +33,7 @@ function callAPI(queryURL) {
     $(".date").append(date);
 
     var iconurl =
-      "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png";
+      "https://openweathermap.org/img/w/" + response.weather[0].icon + ".png";
     $("#iconImage").attr("src", iconurl);
     var humidity = response.main.humidity;
     var temp = Math.floor((response.main.temp - 273.15) * 1.8 + 32);
@@ -47,13 +47,13 @@ function callAPI(queryURL) {
     var lat = response.coord.lat;
     var lon = response.coord.lon;
     $.ajax({
-      url: `http://api.openweathermap.org/data/2.5/uvi?${apiKey}&lat=${lat}&lon=${lon}`,
+      url: `https://api.openweathermap.org/data/2.5/uvi?${apiKey}&lat=${lat}&lon=${lon}`,
       method: "GET"
     }).then(function(response2) {
       console.log(response2);
       $(".uvIndex").append(response2.value);
       $.ajax({
-        url: `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}${apiKey}`,
+        url: `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}${apiKey}`,
         method: "GET"
       }).then(function(response3) {
         console.log(response3);
@@ -64,7 +64,7 @@ function callAPI(queryURL) {
             var col = $("<div class = 'col-sm-2'>");
             var date = moment(list[index].dt, "X").format("MM/DD/YYYY");
             var iconurl =
-              "http://openweathermap.org/img/w/" +
+              "https://openweathermap.org/img/w/" +
               list[index].weather[0].icon +
               ".png";
             var img = $("<img>");
