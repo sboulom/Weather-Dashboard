@@ -1,10 +1,20 @@
 # Weather-Dashboard
-This API allows you to 
-
-With this homework, you are able to pull up any city and get the weather info and the 5 day forecast.
-you get the temperature, humidity, uv index. 
+This project allows you to search any city and receive the current weather and 5 day forecast. 
 
 
+## Features
+Search cities in any country and receive day temperature and 5 day forecast. You also get the humdity, wind speed, and uv index so you can pack accordingly to your needs.
+
+## Tools
+- Moment.js
+- BootStrap
+- Weather API
+
+## Technologies Used
+- HTML
+- CSS
+- JavaScript
+- jQuery
 
 ## Source
 To use the weather dashboard click here https://sboulom.github.io/Weather-Dashboard/
